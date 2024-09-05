@@ -42,16 +42,16 @@
         lower_layer {
 // ------------------------------------------------------------------------------------------------------------
 // | OFF |  C1 |  C2 |  C3  |  C4  |      |                   |  F7  |  F8   |  F9   |  F10 |  F11  |  F12  |
-// | ON  |  CQ |     |  CE  |  CR  |      |                   |      |       |       |      |       |       |
-// |  `  |  !  |  @  |  #   |  CF  |  %   |                   |  <-  |   v   |   ^   |  ->  |       |  "|"  |
+// | ON  |  CQ |  CW |  CE  |  CR  |      |                   |      |  CU   |       |      |       |       |
+// |  `  |  CA |  CS |  CD  |  CF  |  %   |                   |  <-  |   v   |   ^   |  ->  |       |  "|"  |
 // |  ^  |  CZ |  CX |  CC  |  CV  |  ~   |        |  |       |  =   |  _    |   +   |  {   |   }   |       |
 //                   |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&ext_power EP_OFF &kp LC(1) &kp LC(2)         &kp LC(3) &kp LC(4)  &kp F6                  &kp F7    &kp F8    &kp F9    &kp F10   &kp F11   &kp F12
-&ext_power EP_ON  &kp LC(Q) &ext_power EP_TOG &kp LC(E) &kp LC(R)  &trans                  &trans    &trans    &trans    &trans    &trans    &trans
-&kp GRAVE         &kp EXCL  &kp AT            &kp HASH  &kp LC(F)  &kp PRCNT               &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &trans    &kp PIPE
-&kp CARET         &kp LC(Z) &kp LC(X)         &kp LC(C) &kp LC(V)  &kp TILDE &trans &trans &kp EQUAL &kp MINUS &kp PLUS  &kp LBRC  &kp RBRC  &trans
+&ext_power EP_OFF &kp LC(1) &kp LC(2) &kp LC(3) &kp LC(4)  &kp F6                  &kp F7    &kp F8    &kp F9    &kp F10   &kp F11   &kp F12
+&ext_power EP_ON  &kp LC(Q) &kp LC(W) &kp LC(E) &kp LC(R)  &trans                  &trans    &kp LC(U) &trans    &trans    &trans    &trans
+&kp GRAVE         &kp LC(A) &kp LC(S) &kp LC(D) &kp LC(F)  &kp PRCNT               &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &trans    &kp PIPE
+&kp CARET         &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V)  &kp TILDE &trans &trans &kp EQUAL &kp MINUS &kp PLUS  &kp LBRC  &kp RBRC  &trans
                                                      &trans    &trans     &trans    &trans &trans &trans    &trans    &trans
             >;
 
