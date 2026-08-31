@@ -42,16 +42,16 @@
         lower_layer {
 // ------------------------------------------------------------------------------------------------------------
 // | LGG |  C1 |  C2 |  C3  |  C4  |  OFF |                   |  F7  |  F8   |  F9   |  F10 |  F11  |  F12  |
-// | LGT |  CQ |  CW |  CE  |  CR  |  ON  |                   |      |  CU   |       |      |       |       |
+// | LGT |  CQ |  CW |  CE  |  CR  |  ON  |                   |  ^   |  CU   |       |      |       |       |
 // |  `  |  CA |  CS |  CD  |  CF  |  CG  |                   |  <-  |   v   |   ^   |  ->  |       |  "|"  |
-// |  ^  |  CZ |  CX |  CC  |  CV  |  CB  |        |  |       |  =   |  _    |   +   |  {   |   }   |       |
+// |     |  CZ |  CX |  CC  |  CV  |  CB  |        |  |       |  =   |  _    |   +   |  {   |   }   |       |
 //                   |      |      |      |        |  |       |      |       |       |
 
             bindings = <
 &kp LG(GRAVE) &kp LC(1) &kp LC(2) &kp LC(3) &kp LC(4)  &kp LC(5)        &kp F7    &kp F8    &kp F9    &kp F10   &kp F11   &kp F12
-&kp LG(TAB)   &kp LC(Q) &kp LC(W) &kp LC(E) &kp LC(R)  &kp LC(T)        &trans    &kp LC(U) &trans    &trans    &trans    &trans
+&kp LG(TAB)   &kp LC(Q) &kp LC(W) &kp LC(E) &kp LC(R)  &kp LC(T)        &kp CARET    &kp LC(U) &trans    &trans    &trans    &trans
 &kp GRAVE     &kp LC(A) &kp LC(S) &kp LC(D) &kp LC(F)  &kp LC(G)               &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &trans    &kp PIPE
-&kp CARET     &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V)  &kp LC(B) &trans &trans &kp EQUAL &kp MINUS &kp PLUS  &kp LBRC  &kp RBRC  &trans
+&trans     &kp LC(Z) &kp LC(X) &kp LC(C) &kp LC(V)  &kp LC(B) &trans &trans &kp EQUAL &kp MINUS &kp PLUS  &kp LBRC  &kp RBRC  &trans
                                          &trans &trans &trans &trans    &trans &trans &trans &trans
             >;
 
